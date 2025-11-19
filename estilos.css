@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(135deg, #f7c1e3 0%, #b993d6 50%, #6ec6f7 100%);
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+}
+
+.biografia-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 32px;
+    box-shadow: 0 8px 32px rgba(185, 147, 214, 0.2);
+    padding: 24px 48px;
+    color: #2d0036;
+    cursor: url('https://i.postimg.cc/bwwDvPZm/cursor.png'), pointer;
+}
+
+.biografia-container:hover {
+    cursor: url('https://i.postimg.cc/bwwDvPZm/cursor.png'), pointer;
+}
+
+@media (max-width: 700px) {
+    .biografia-container {
+        padding: 24px 4vw;
+        margin: 20px 2vw;
+    }
+}
+
+header h1 {
+    color: #d72660;
+    font-size: 7em;
+    text-align: center;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3.2em;
+    color: #810c50;
+    margin-bottom: 14px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.2em;
+    color: #b993d6;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+.presentacion {
+    color: #6c3483;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.intereses h2, .redes-sociales h2 {
+    color: #b993d6;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.intereses ul {
+    list-style: none;
+    padding: 0;
+}
+
+.intereses ul li {
+    position: relative;
+    padding-left: 32px;
+    margin-bottom: 14px;
+    font-size: 1.25em;
+    color: #2d0036;
+}
+
+.intereses ul li::before {
+    content: "💖";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2em;
+    color: #d72660;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.social-links a {
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: background 0.2s, color 0.2s;
+}
+
+.instagram {
+    background: #e75480;
+    color: #fff;
+}
+
+.tiktok {
+    background: #f7c1e3;
+    color: #6c3483;
+}
+.social-links a:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 2px 12px rgba(215, 38, 96, 0.15);
+}
+
+footer {
+    text-align: center;
+    color: #a569bd;
+    font-size: 1.1em;
+    margin-top: 18px;
+}
+
+/* Galería de imágenes */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 16px;
+    margin: 28px 0 18px 0;
+    justify-items: center;
+}
+.galeria img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(185, 147, 214, 0.18);
+    border: 3px solid #f7c1e3;
+    transition: transform 0.2s;
+}
+.galeria img:hover {
+    transform: scale(1.08) rotate(-2deg);
+    box-shadow: 0 8px 24px rgba(215, 38, 96, 0.18);
+}
+
+/* Wishlist */
+.wishlists {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin: 24px 0;
+}
+.wishlist {
+    background: #fff0fa;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(185, 147, 214, 0.10);
+    padding: 16px 18px;
+    color: #810c50;
+}
+.wishlist h3 {
+    color: #d72660;
+    margin-bottom: 8px;
+    font-size: 1.15em;
+}
+.wishlist a {
+    display: inline-block;
+    background: #e75480;
+    color: #fff;
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    margin-top: 8px;
+    box-shadow: 0 2px 12px rgba(215, 38, 96, 0.10);
+}
+.wishlist a:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 2px 12px rgba(215, 38, 96, 0.18);
+    color: #fff;
+}
+
+.foto-principal img, .photo-separator img {
+    display: block;
+    margin: 0 auto;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.imagenes-finales {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 18px;
+}
+
+.imagenes-finales img {
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tip-table-container {
+    background: rgba(255,255,255,0.95);
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(185, 147, 214, 0.18);
+    padding: 24px 18px;
+    margin: 18px auto 28px auto;
+    max-width: 480px;
+}
+
+.tip-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 24px 38px;
+    font-size: 1.08em;
+}
+
+.tip-table tr {
+    height: 38px;
+}
+
+.tip-table td {
+    background: #f7c1e3;
+    color: #810c50;
+    border-radius: 8px;
+    padding: 4px 6px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.98em;
+    box-shadow: 0 1px 4px rgba(215, 38, 96, 0.07);
+}
+
+.tip-menu h2 {
+    margin-bottom: 10px;
+    font-size: 2em;
+    color: #d72660;
+    text-align: center;
+}
+
+.panel {
+    background: linear-gradient(135deg, #f7c1e3 0%, #b993d6 50%, #6ec6f7 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(185, 147, 214, 0.18);
+    padding: 10px 48px;
+    margin: 8px auto 12px auto;
+    max-width: 800px;
+    color: #2d0036;
+}
+
+.tip-table-container, .interests, .turns-on, .social-media {
+    background: linear-gradient(135deg, #f7c1e3 0%, #b993d6 50%, #6ec6f7 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(185, 147, 214, 0.18);
+    padding: 10px 48px;
+    margin: 8px auto 12px auto;
+    max-width: 800px;
+    color: #2d0036;
+}
+
+header {
+    background: linear-gradient(135deg, #f7c1e3 0%, #b993d6 50%, #6ec6f7 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(185, 147, 214, 0.18);
+    padding: 10px 48px;
+    margin: 8px auto 12px auto;
+    max-width: 800px;
+    color: #2d0036;
+}
+
+footer {
+    background: linear-gradient(135deg, #f7c1e3 0%, #b993d6 50%, #6ec6f7 100%);
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(185, 147, 214, 0.18);
+    padding: 10px 48px;
+    margin: 8px auto 12px auto;
+    max-width: 800px;
+    color: #2d0036;
+}
+
+.panel, .tip-table td, .presentacion, ul, p, a {
+    font-family: 'Playfair Display', serif;
+}
